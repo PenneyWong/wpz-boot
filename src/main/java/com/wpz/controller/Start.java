@@ -3,14 +3,24 @@ package com.wpz.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Start {
-
+	
+	@Autowired(required=false)
+	RedisTemplate redisTemplate;
+	
 	@RequestMapping("/hello")
 	public String start() {
+		redisTemplate.opsForValue().set("name", "WPZ");
+		redisTemplate.setKeySerializer(new StringRedisSerializer());
+		redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
 		return "Hello World";
 	}
 
