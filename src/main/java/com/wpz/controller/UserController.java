@@ -15,6 +15,6 @@ public class UserController {
 	@RequestMapping("/selectById")
 	public String selectById() {
 
-		return userDaoImpl.selectById("1").toString();
+		return userDaoImpl.selectById("2").toString();
 	}
 }
