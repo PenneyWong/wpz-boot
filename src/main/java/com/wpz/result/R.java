@@ -1,9 +1,9 @@
-package com.result;
+package com.wpz.result;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.enumtype.ResultCodeEnum;
+import com.wpz.enumtype.ResultCodeEnum;
 
 import lombok.Data;
 

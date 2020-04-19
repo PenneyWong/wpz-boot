@@ -1,4 +1,4 @@
-package com.enumtype;
+package com.wpz.enumtype;
 
 
 public enum ResultCodeEnum {
