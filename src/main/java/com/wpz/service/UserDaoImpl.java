@@ -1,5 +1,7 @@
 package com.wpz.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,5 +16,9 @@ public class UserDaoImpl {
 	
 	public User selectById(String id) {
 		return userDao.selectById(id);
+	}
+	
+	public List<User> selectUserList(){
+		return userDao.selectUserList();
 	}
 }
