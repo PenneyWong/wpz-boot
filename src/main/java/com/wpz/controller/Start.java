@@ -7,17 +7,23 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 @Controller
+@Api("Start")
 public class Start {
 
 	@ResponseBody
+	@ApiOperation(value = "Hello World")
 	@RequestMapping("/hello")
-	public String start () {
-		
+	public String start() {
+
 		return "Hello World";
 	}
-	
+
 	@ResponseBody
+	@ApiOperation(value = "Map Output")
 	@RequestMapping("/user")
 	public Map<String, Object> getMap() {
 

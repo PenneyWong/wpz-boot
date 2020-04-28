@@ -11,7 +11,7 @@ import org.springframework.validation.annotation.Validated;
 @Component
 @PropertySource(value = "classpath:application.properties", ignoreResourceNotFound = true, encoding = "UTF-8") // 导入配置问价
 @ConfigurationProperties(prefix = "pig")
-@Validated
+@Validated // 校验数据
 public class Pig {
 
 //	@Value("${pig.name}")

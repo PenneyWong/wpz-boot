@@ -18,10 +18,12 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<mybatis.version>2.1.1</mybatis.version>
+		<swagger.version>2.9.2</swagger.version>
+		<druid.version>1.1.21</druid.version>
 	</properties>
 
 	<dependencies>
-		<!-- spring boot web 依赖 -->
+		<!-- SpringBoot web 依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -39,7 +41,7 @@
 			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
 
-		<!-- spring boot test 依赖 -->
+		<!-- SpringBoot test 依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -66,7 +68,7 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- spring boot configuration 依赖 -->
+		<!-- SpringBoot configuration 依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
@@ -82,11 +84,23 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
-			<version>1.1.21</version>
+			<version>${druid.version}</version>
+		</dependency>
+
+		<!-- 引入swagger2 -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${swagger.version}</version>
+		</dependency>
+
+		<!-- 引入swagger-ui -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${swagger.version}</version>
 		</dependency>
 	</dependencies>
-
-
 
 	<build>
 		<plugins>
