@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.wpz.service.UserDaoImpl;
@@ -19,13 +20,13 @@ public class UserController {
 	@Autowired
 	private UserDaoImpl userDaoImpl;
 
-	@RequestMapping("/selectById")
+	@RequestMapping(value = "/selectById", method = RequestMethod.POST, produces = "application/json;charset:Utf-8")
 	public String selectById() {
 
 		return userDaoImpl.selectById("2").toString();
 	}
 
-	@RequestMapping("/selectUserList")
+	@RequestMapping(value = "/selectUserList", method = RequestMethod.POST, produces = "application/json;charset:Utf-8")
 	public List<Map> selectUserList() {
 		return userDaoImpl.selectUserList();
 	}

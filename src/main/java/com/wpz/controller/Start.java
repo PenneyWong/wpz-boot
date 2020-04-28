@@ -5,7 +5,9 @@ import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.resource.HttpResource;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -16,7 +18,7 @@ public class Start {
 
 	@ResponseBody
 	@ApiOperation(value = "Hello World")
-	@RequestMapping("/hello")
+	@RequestMapping(value = "/hello", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
 	public String start() {
 
 		return "Hello World";
@@ -24,7 +26,7 @@ public class Start {
 
 	@ResponseBody
 	@ApiOperation(value = "Map Output")
-	@RequestMapping("/user")
+	@RequestMapping(value = "/user", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
 	public Map<String, Object> getMap() {
 
 		Map<String, Object> user = new HashMap<String, Object>();
