@@ -25,11 +25,12 @@ public class SwaggerConfig {
 
 	@Bean
 	public Docket creatSwagger() {
-		return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo());
+		return new Docket(DocumentationType.SWAGGER_2).apiInfo(new ApiInfoBuilder().title(swaggerBean.getTitle())
+				.version(swaggerBean.getVersion()).description(swaggerBean.getDescription()).build());
 	}
 
-	private ApiInfo apiInfo() {
-		return new ApiInfoBuilder().title(swaggerBean.getTitle()).version(swaggerBean.getVersion())
-				.description(swaggerBean.getDescription()).build();
-	}
+//	private ApiInfo apiInfo() {
+//		return new ApiInfoBuilder().title(swaggerBean.getTitle()).version(swaggerBean.getVersion())
+//				.description(swaggerBean.getDescription()).build();
+//	}
 }
