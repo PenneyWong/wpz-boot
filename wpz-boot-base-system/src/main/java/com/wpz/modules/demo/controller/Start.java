@@ -17,7 +17,7 @@ public class Start {
 
 	@ResponseBody
 	@ApiOperation(value = "Hello World")
-	@RequestMapping(value = "/hello", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
+	@RequestMapping(value = "/hello", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
 	public String start() {
 
 		return "Hello World";
