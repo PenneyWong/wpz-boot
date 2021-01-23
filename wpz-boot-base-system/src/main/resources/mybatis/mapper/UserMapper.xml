@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.wpz.modules.demo.dao.UserDao">
+<mapper namespace="com.wpz.system.modules.demo.dao.UserDao">
 	<select id="selectById" parameterType="String"
-		resultType="com.wpz.modules.demo.pojo.User">
+		resultType="com.wpz.system.modules.demo.pojo.User">
 		select * from user where id =
 		#{id}
 	</select>

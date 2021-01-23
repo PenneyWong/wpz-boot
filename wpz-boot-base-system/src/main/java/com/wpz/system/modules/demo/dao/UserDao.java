@@ -1,4 +1,4 @@
-package com.wpz.modules.demo.dao;
+package com.wpz.system.modules.demo.dao;
 
 import java.util.List;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.wpz.modules.demo.pojo.User;
+import com.wpz.system.modules.demo.pojo.User;
 
 @Mapper
 public interface UserDao {
