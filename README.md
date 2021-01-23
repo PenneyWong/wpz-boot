@@ -1,2 +1,2 @@
-# Blog
-# SpringBoot + mybatis 项目
+# wpz-boot
+# SpringBoot + mybatis-plus 项目
