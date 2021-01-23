@@ -1,4 +1,4 @@
-package com.wpz.modules.pojo;
+package com.wpz.modules.demo.pojo;
 
 public class User {
 

@@ -1,4 +1,4 @@
-package com.wpz.modules.config;
+package com.wpz.modules.demo.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

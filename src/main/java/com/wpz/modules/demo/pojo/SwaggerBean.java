@@ -1,4 +1,4 @@
-package com.wpz.modules.pojo;
+package com.wpz.modules.demo.pojo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;

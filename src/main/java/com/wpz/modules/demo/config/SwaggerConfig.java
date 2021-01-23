@@ -1,4 +1,4 @@
-package com.wpz.modules.config;
+package com.wpz.modules.demo.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-import com.wpz.modules.pojo.SwaggerBean;
+import com.wpz.modules.demo.pojo.SwaggerBean;
 
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.spi.DocumentationType;
@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableWebMvc
 @EnableSwagger2
 @Configuration
-@ComponentScan("com.wpz.modules.controller")
+@ComponentScan("com.wpz.modules.demo.controller")
 public class SwaggerConfig {
 
 	@Autowired

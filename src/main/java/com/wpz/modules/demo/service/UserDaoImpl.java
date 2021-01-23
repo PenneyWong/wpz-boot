@@ -1,4 +1,4 @@
-package com.wpz.modules.service;
+package com.wpz.modules.demo.service;
 
 import java.util.List;
 import java.util.Map;
@@ -6,8 +6,8 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.wpz.modules.dao.UserDao;
-import com.wpz.modules.pojo.User;
+import com.wpz.modules.demo.dao.UserDao;
+import com.wpz.modules.demo.pojo.User;
 
 @Service
 public class UserDaoImpl {

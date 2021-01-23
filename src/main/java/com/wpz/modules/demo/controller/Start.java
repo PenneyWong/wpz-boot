@@ -1,4 +1,4 @@
-package com.wpz.modules.controller;
+package com.wpz.modules.demo.controller;
 
 import java.util.HashMap;
 import java.util.Map;
