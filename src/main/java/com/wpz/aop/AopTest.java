@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class AopTest {
-    
+
     public void test(){}
 }
