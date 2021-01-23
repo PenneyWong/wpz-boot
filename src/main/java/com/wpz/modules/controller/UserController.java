@@ -1,4 +1,4 @@
-package com.wpz.controller;
+package com.wpz.modules.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.wpz.service.UserDaoImpl;
+import com.wpz.modules.service.UserDaoImpl;
 
 @RestController
 public class UserController {

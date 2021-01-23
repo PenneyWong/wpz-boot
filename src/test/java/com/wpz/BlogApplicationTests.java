@@ -1,14 +1,13 @@
 package com.wpz;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BlogApplicationTests {
+class WpzBootApplicationTests {
 
-	@Test
-	void contextLoads() {
-
-	}
+//	@Test
+//	void contextLoads() {
+//
+//	}
 
 }
