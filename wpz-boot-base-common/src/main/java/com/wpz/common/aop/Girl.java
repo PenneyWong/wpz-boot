@@ -1,5 +1,8 @@
 package com.wpz.common.aop;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Girl implements Man{
     @Override
     public void buy(String price) {
