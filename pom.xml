@@ -28,6 +28,7 @@
         <swagger.version>2.9.2</swagger.version>
         <druid.version>1.1.17</druid.version>
         <rocketmq.version>4.7.0</rocketmq.version>
+        <commons.version>2.6</commons.version>
     </properties>
 
     <dependencyManagement>
@@ -77,13 +78,7 @@
             </exclusions>
         </dependency>
 
-        <!-- mybatis 依赖 -->
-        <!--        <dependency>-->
-        <!--            <groupId>org.mybatis.spring.boot</groupId>-->
-        <!--            <artifactId>mybatis-spring-boot-starter</artifactId>-->
-        <!--            <version>${mybatis.version}</version>-->
-        <!--        </dependency>-->
-
+        <!-- mybatis-plus 依赖 -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -109,18 +104,7 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
         </dependency>
 
-        <!-- 引入thymelesf -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-
         <!-- 引入druid数据源 -->
-        <!--        <dependency>-->
-        <!--            <groupId>com.alibaba</groupId>-->
-        <!--            <artifactId>druid</artifactId>-->
-        <!--            <version>${druid.version}</version>-->
-        <!--        </dependency>-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
@@ -165,6 +149,28 @@
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
+        </dependency>
+
+        <!-- redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
+
+        <!-- commons -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>${commons.version}</version>
         </dependency>
 
     </dependencies>
