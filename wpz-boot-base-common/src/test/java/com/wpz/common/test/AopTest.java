@@ -1,7 +1,5 @@
 package com.wpz.common.test;
 
-import com.wpz.common.aop.Boy;
-import com.wpz.common.aop.Girl;
 import javafx.application.Application;
 import org.junit.Test;
 import org.junit.runner.RunWith;
