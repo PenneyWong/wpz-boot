@@ -20,13 +20,13 @@ public class UserController {
 	@Autowired
 	private UserDaoImpl userDaoImpl;
 
-	@RequestMapping(value = "/selectById", method = RequestMethod.POST, produces = "application/json;charset:Utf-8")
+	@RequestMapping(value = "/selectById", method = RequestMethod.GET, produces = "application/json;charset:Utf-8")
 	public String selectById() {
 
 		return userDaoImpl.selectById("2").toString();
 	}
 
-	@RequestMapping(value = "/selectUserList", method = RequestMethod.POST, produces = "application/json;charset:Utf-8")
+	@RequestMapping(value = "/selectUserList", method = RequestMethod.GET, produces = "application/json;charset:Utf-8")
 	public List<Map> selectUserList() {
 		return userDaoImpl.selectUserList();
 	}

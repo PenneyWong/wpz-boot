@@ -12,5 +12,4 @@ public class WpzBootApplication {
 
 		System.out.println("Status: Started");
 	}
-
 }

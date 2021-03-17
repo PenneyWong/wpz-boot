@@ -25,12 +25,12 @@
     <properties>
         <wpzboot.version>0.0.1-SNAPSHOT</wpzboot.version>
         <java.version>1.8</java.version>
-        <!--        <mybatis.version>2.1.1</mybatis.version>-->
         <mybatis-plus.version>3.3.2</mybatis-plus.version>
         <swagger.version>2.9.2</swagger.version>
         <druid.version>1.1.17</druid.version>
         <rocketmq.version>4.7.0</rocketmq.version>
         <commons.version>2.6</commons.version>
+        <!--        <dynamic-datasource.version>2.5.4</dynamic-datasource.version>-->
     </properties>
 
     <dependencyManagement>
@@ -97,6 +97,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.20</version>
             <scope>runtime</scope>
         </dependency>
 
@@ -105,6 +106,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
         </dependency>
+
+        <!-- 动态数据源 -->
+        <!--        <dependency>-->
+        <!--            <groupId>com.baomidou</groupId>-->
+        <!--            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>-->
+        <!--            <version>${dynamic-datasource.version}</version>-->
+        <!--        </dependency>-->
 
         <!-- 引入druid数据源 -->
         <dependency>
