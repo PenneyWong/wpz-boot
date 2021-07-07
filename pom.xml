@@ -12,10 +12,10 @@
     </parent>
 
     <groupId>com.wpz</groupId>
-    <artifactId>wpz-boot</artifactId>
+    <artifactId>wpz-boot-users</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>wpz-boot</name>
-    <description>wpz-boot</description>
+    <name>wpz-boot-users</name>
+    <description>wpz-boot-users</description>
 
     <modules>
         <module>wpz-boot-base-common</module>
