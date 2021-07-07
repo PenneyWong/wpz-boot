@@ -31,7 +31,7 @@
         <swagger.version>2.9.2</swagger.version>
         <druid.version>1.1.17</druid.version>
         <rocketmq.version>4.7.0</rocketmq.version>
-        <commons.version>2.6</commons.version>
+        <commons.version>2.7</commons.version>
         <mysql-connector.version>8.0.20</mysql-connector.version>
         <!--        <dynamic-datasource.version>2.5.4</dynamic-datasource.version>-->
 <!--        <kafka.version>2.6.6</kafka.version>-->
