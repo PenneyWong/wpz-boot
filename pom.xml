@@ -259,6 +259,7 @@
             <artifactId>spring-kafka</artifactId>
         </dependency>
 
+        <!-- openfeign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>

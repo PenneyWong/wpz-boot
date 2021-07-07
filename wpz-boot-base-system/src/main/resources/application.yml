@@ -52,7 +52,7 @@ spring:
        min-idle: 2       #最小等待连接中的数量,设 0 为没有限制
   kafka:
     # 以逗号分隔的地址列表，用于建立与Kafka集群的初始连接(kafka 默认的端口号为9092)
-    bootstrap-servers: 10.254.12.14:9092,10.254.12.15:9092
+#    bootstrap-servers: 10.254.12.14:9092,10.254.12.15:9092
     producer:
       # 发生错误后，消息重发的次数。
       retries: 3
