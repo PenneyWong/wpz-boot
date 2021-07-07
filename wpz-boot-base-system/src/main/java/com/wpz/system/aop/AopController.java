@@ -1,4 +1,4 @@
-package com.wpz.aop;
+package com.wpz.system.aop;
 
 
 import org.springframework.web.bind.annotation.GetMapping;

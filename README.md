@@ -1,2 +1,2 @@
 # wpz-boot
-# SpringBoot + mybatis-plus 项目
+# SpringBoot + mybatis 项目

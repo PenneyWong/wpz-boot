@@ -25,6 +25,7 @@
     <properties>
         <wpzboot.version>0.0.1-SNAPSHOT</wpzboot.version>
         <java.version>1.8</java.version>
+        <spring-cloud.version>Greenwich.SR5</spring-cloud.version>
         <mybatis.version>2.1.4</mybatis.version>
         <!--        <mybatis-plus.version>3.3.2</mybatis-plus.version>-->
         <swagger.version>2.9.2</swagger.version>
@@ -33,7 +34,7 @@
         <commons.version>2.6</commons.version>
         <mysql-connector.version>8.0.20</mysql-connector.version>
         <!--        <dynamic-datasource.version>2.5.4</dynamic-datasource.version>-->
-        <kafka.version>2.6.6</kafka.version>
+<!--        <kafka.version>2.6.6</kafka.version>-->
     </properties>
 
     <dependencyManagement>
@@ -42,6 +43,13 @@
                 <groupId>com.wpz</groupId>
                 <artifactId>wpz-boot-base-common</artifactId>
                 <version>${wpzboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -99,6 +107,7 @@
         <!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
         <!--            <version>${mybatis-plus.version}</version>-->
         <!--        </dependency>-->
+
         <!-- mybatis 依赖-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -154,15 +163,6 @@
             <version>${swagger.version}</version>
         </dependency>
 
-        <!-- kafka -->
-        <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
-            <version>${kafka.version}</version>
-        </dependency>
-
-
-
         <!-- rocketMQ client -->
         <dependency>
             <groupId>org.apache.rocketmq</groupId>
@@ -210,6 +210,58 @@
             <artifactId>junit-jupiter</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
+        </dependency>
+
+        <!-- 配置中心 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-databind</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework.security</groupId>
+                    <artifactId>spring-security-crypto</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--注册中心-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>xstream</artifactId>
+                    <groupId>com.thoughtworks.xstream</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- 定时任务 -->
+        <dependency>
+            <groupId>com.github.kuhn-he</groupId>
+            <artifactId>elastic-job-lite-spring-boot-starter</artifactId>
+            <version>2.1.5</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.quartz-scheduler</groupId>
+                    <artifactId>quartz</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- kafka -->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
 

@@ -1,4 +1,4 @@
-package com.wpz.quartz;
+package com.wpz.system.quartz;
 
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;

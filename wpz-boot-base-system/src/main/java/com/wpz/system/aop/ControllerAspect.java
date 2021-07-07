@@ -1,4 +1,4 @@
-package com.wpz.aop;
+package com.wpz.system.aop;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class ControllerAspect {
 
-    @Pointcut("execution(public String com.wpz.aop.AopController.aopTest(..))")
+    @Pointcut("execution(public String com.wpz.system.aop.AopController.aopTest(..))")
     public void executeService( ){}
 
     @Around("executeService()")
