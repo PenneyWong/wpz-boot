@@ -9,10 +9,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableEurekaClient
 @EnableFeignClients
 @SpringBootApplication
-public class WpzBootApplication {
+public class WpzBootUsersApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WpzBootApplication.class, args);
+		SpringApplication.run(WpzBootUsersApplication.class, args);
 
 		System.out.println("Status: Started");
 	}
